@@ -1,0 +1,40 @@
+{:paths ["script"]
+ :deps {medley/medley {:mvn/version "1.3.0"}}
+ :min-bb-version "0.4.0"
+ :tasks
+ {
+  average {:doc "Average duration"
+           :task (shell "./add-track-times.clj average")}
+  
+  durations-seconds {:doc "List of durations in seconds"
+                     :task (shell "./add-track-times.clj durations-seconds")} 
+  
+  help {:doc "Help message"
+        :task (shell "./add-track-times.clj help")
+        :override-builtin true}
+  
+  list {:doc "Lists all labeled records and their duration (mm:ss)"
+        :task (shell "./add-track-times.clj list")} 
+  
+  list-durations {:doc "Lists records duration (mm:ss)"
+                  :task (shell "./add-track-times.clj list-durations")}
+  
+  list-labels {:doc "Lists records Lables"
+               :task (shell "./add-track-times.clj list-labels")}
+  
+  list-urls {:doc "Lists records with urls"
+             :task (shell "./add-track-times.clj list-url")} 
+  
+  total {:doc "Total duration (mm:ss)"
+         :task (shell "./add-track-times.clj total")}
+  
+  total-seconds {:doc "Total duration (s)"
+                 :task (shell "./add-track-times.clj total-seconds")}
+  
+
+  
+
+  ;; More tasks to follow ...
+  ;; ...
+
+  }}
