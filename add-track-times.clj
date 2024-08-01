@@ -61,7 +61,7 @@
         (= "list-labels" function) (doseq [v example-times] (println (str (get v 0))))
 
         ;; Lists records with urls
-        (= "list-url" function) (doseq [v example-times] (println (str (get v 0) ": " (if (nil? (get v 2)) "No URL provided" (get v 2)))))
+        (= "list-url" function) (doseq [v example-times] (println (str (get v 0) ": " (if (nil? (get v 2)) "No data provided" (get v 2)))))
 
         ;; Maximum duration
         ;; (= "max" function) (println (str "Maximum duration: " (apply max example-times)))
